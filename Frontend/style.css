@@ -1,0 +1,89 @@
+/* Body and Typography */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.movie-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* New: Make the card a flex column */
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-info {
+  padding: 1rem;
+  /* New: Allow this section to grow */
+  flex-grow: 1;
+  /* New: Arrange text and buttons in a column */
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-info p {
+  /* New: Allow the paragraph to grow and fill space */
+  flex-grow: 1;
+}
+
+h1,
+h3 {
+  font-family: "Georgia", serif;
+}
+
+/* Header & Footer */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+}
+
+/* Main Content Area */
+main {
+  flex-grow: 1;
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto; /* Center the main content */
+}
+
+/* New Controls Wrapper */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  gap: 1rem;
+}
+
+/* Ensure the form takes up available space */
+.controls form {
+  flex-grow: 1;
+  display: flex;
+}
+
+.controls input {
+  flex-grow: 1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

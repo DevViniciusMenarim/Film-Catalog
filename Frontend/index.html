@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Catálogo de Filmes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Meu Catálogo de Filmes</h1>
+    </header>
+
+    <main>
+      <p>Em breve, os filmes aparecerão aqui!</p>
+      <div class="controls">
+        <form action="/search" method="GET">
+          <input
+            type="text"
+            name="movie_query"
+            placeholder="Digite o nome do filme..."
+          />
+          <button type="submit">Buscar</button>
+        </form>
+        <button id="view-favorites-btn">View Favorites</button>
+      </div>
+
+      <div id="results"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Movie Catalog. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
