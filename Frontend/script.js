@@ -9,7 +9,7 @@ searchForm.addEventListener("submit", (event) => {
   fetch(`/search?movie_query=${searchTerm}`)
     .then((response) => response.json())
     .then((data) => {
-      displayMovies(data.results, 'search');
+      displayMovies(data.results, "search");
     });
 });
 
@@ -49,7 +49,7 @@ viewFavoritesBtn.addEventListener("click", () => {
   fetch("/favorites")
     .then((response) => response.json())
     .then((data) => {
-      displayMovies(data, 'favorites');
+      displayMovies(data, "favorites");
     });
 });
 

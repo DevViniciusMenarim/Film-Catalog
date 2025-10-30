@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const axios = require("axios");
 const mysql2 = require("mysql2");
+const cors = require("cors");
 
 const pool = mysql2.createPool({
   host: "localhost",
@@ -14,8 +15,8 @@ const promisePool = pool.promise();
 const PORT = 3000;
 const app = express();
 
-app.use(express.static(path.join(__dirname, "../Frontend")));
 app.use(express.json());
+app.use(cors());
 
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
