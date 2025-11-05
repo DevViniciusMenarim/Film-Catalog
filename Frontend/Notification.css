@@ -1,0 +1,51 @@
+.notification-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 15px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: var(--imdb-text-light);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.notification-container.success {
+  background-color: #4caf50;
+  border: 1px solid #388e3c;
+}
+
+.notification-container.error {
+  background-color: #f44336;
+  border: 1px solid #d32f2f;
+}
+
+.notification-container .close-btn {
+  background: none;
+  border: none;
+  color: var(--imdb-text-light);
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 5px;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.notification-container .close-btn:hover {
+  color: var(--imdb-yellow);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

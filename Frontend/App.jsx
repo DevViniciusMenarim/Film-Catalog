@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import MovieCard from "./MovieCard";
+import Notification from "./Notification";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -10,8 +11,14 @@ function App() {
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [notification, setNotification] = useState(null);
 
   const API_URL = "http://localhost:3000";
+
+  const showNotification = (message, type) => {
+    setNotification({ message, type });
+    setTimeout(() => setNotification(null), 3000);
+  };
 
   const handleSearch = async (e) => {
     e.preventDefault();
@@ -21,6 +28,7 @@ function App() {
     setError(null);
     setView("results");
     setFavorites([]);
+    setNotification(null);
 
     try {
       const response = await fetch(
@@ -31,6 +39,7 @@ function App() {
     } catch (error) {
       console.error("Error searching movies:", error);
       setError("Falha ao buscar filmes. Tente novamente.");
+      showNotification("Falha ao buscar filmes. Tente novamente.", "error");
     } finally {
       setLoading(false);
     }
@@ -41,6 +50,7 @@ function App() {
     setError(null);
     setView("favorites");
     setResults([]);
+    setNotification(null);
 
     try {
       const response = await fetch(`${API_URL}/favorites`);
@@ -49,6 +59,7 @@ function App() {
     } catch (error) {
       console.error("Error fetching favorites:", error);
       setError("Falha ao carregar favoritos. O backend está online?");
+      showNotification("Falha ao carregar favoritos.", "error");
     } finally {
       setLoading(false);
     }
@@ -63,10 +74,13 @@ function App() {
         },
         body: JSON.stringify({ tmdb_id: movie.id, title: movie.title }),
       });
-      alert(`${movie.title} salvo nos favoritos!`);
+      showNotification(`${movie.title} salvo nos favoritos!`, "success");
     } catch (error) {
       console.error("Error saving favorite:", error);
-      alert("Falha ao salvar. Este filme já é um favorito?");
+      showNotification(
+        "Falha ao salvar. Este filme já é um favorito?",
+        "error"
+      );
     }
   };
 
@@ -76,10 +90,10 @@ function App() {
         method: "DELETE",
       });
       setFavorites(favorites.filter((movie) => movie.id !== tmdb_id));
-      alert("Filme removido dos favoritos!");
+      showNotification("Filme removido dos favoritos!", "success");
     } catch (error) {
       console.error("Error deleting favorite:", error);
-      alert("Falha ao deletar.");
+      showNotification("Falha ao deletar o filme.", "error");
     }
   };
 
@@ -142,6 +156,14 @@ function App() {
       <footer>
         <p>&copy; 2025 Movie Catalog. All rights reserved.</p>
       </footer>
+
+      {notification && (
+        <Notification
+          message={notification.message}
+          type={notification.type}
+          onClose={() => setNotification(null)}
+        />
+      )}
     </>
   );
 }

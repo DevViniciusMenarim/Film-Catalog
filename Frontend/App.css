@@ -27,7 +27,7 @@ body {
 
 h1,
 h3 {
-  font-family: "Georgia", serif; 
+  font-family: "Georgia", serif;
 }
 
 header {
@@ -73,7 +73,7 @@ button {
 
 .controls form button:hover,
 .movie-card .save-btn:hover {
-  background-color: #f7d04b; 
+  background-color: #f7d04b;
   transform: translateY(-2px);
 }
 
@@ -102,7 +102,7 @@ button {
 .controls form {
   flex-grow: 1;
   display: flex;
-  min-width: 250px; 
+  min-width: 250px;
 }
 
 .controls input {
@@ -113,7 +113,7 @@ button {
   font-size: 1rem;
   background-color: var(--imdb-bg-light);
   color: var(--imdb-text-light);
-  margin-right: -1px; 
+  margin-right: -1px;
 }
 
 .controls input:focus {
@@ -149,7 +149,7 @@ button {
   height: auto;
   aspect-ratio: 2 / 3;
   object-fit: cover;
-  background-color: var(--imdb-bg-light); /
+  background-color: var(--imdb-bg-light);
 }
 
 .movie-info {
@@ -170,14 +170,19 @@ button {
   font-size: 0.9rem;
   color: var(--imdb-text-grey);
   margin-bottom: 1rem;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.loading,
-.error-message {
-  grid-column: 1 / -1; 
+#results > p {
+  grid-column: 1 / -1;
   text-align: center;
   font-size: 1.2rem;
-  padding: 2rem;
+  padding: 4rem 2rem;
   color: var(--imdb-text-grey);
 }
 
