@@ -1,87 +1,116 @@
-Catálogo de Filmes (Full-Stack)
-Este é um projeto full-stack de um catálogo de filmes que permite aos usuários pesquisar filmes usando a API do TMDB e salvar/remover seus favoritos em um banco de dados MySQL pessoal.
+# 🎬 Catálogo de Filmes | Full-Stack Application
 
-O projeto é dividido em duas partes principais:
+Uma aplicação full-stack moderna que funciona como um catálogo interativo de filmes. O sistema consome dados em tempo real da API do TMDB (The Movie Database) e permite ao usuário gerenciar uma lista personalizada de favoritos com persistência completa em um banco de dados relacional local.
 
-Backend: Uma API RESTful construída em Node.js e Express, responsável por se comunicar com a API do TMDB e com o banco de dados.
+O projeto foi desenvolvido seguindo boas práticas de separação de conceitos (*Separation of Concerns*), dividindo-se de forma clara entre uma API RESTful estável e um frontend reativo com foco em experiência do usuário (UX).
 
-Frontend: Uma aplicação moderna em React (criada com Vite), com uma interface inspirada no IMDb (tema escuro) para consumir a API do Backend.
+---
 
-Funcionalidades
-Pesquisa Dinâmica: Busca de filmes em tempo real na API do The Movie Database (TMDB).
+## 🛠️ Stack Tecnológica e Ecossistema
 
-Gerenciamento de Favoritos: Adicione e salve filmes em uma lista de favoritos.
+O projeto utiliza tecnologias consolidadas no mercado para garantir performance, tipagem ágil e modularidade.
 
-Persistência de Dados: Os favoritos são salvos em um banco de dados MySQL.
+### Backend & Persistência
+* **Runtime:** Node.js (v18+)
+* **Framework Web:** Express.js (Roteamento e Middlewares)
+* **Driver de Banco de Dados:** MySQL2 (utilizando suporte a Promises para código assíncrono limpo)
+* **Segurança:** `dotenv` (isolamento de variáveis de ambiente sensíveis) e `CORS` (controle de acesso HTTP)
 
-Interface Reativa: Visualização e remoção de favoritos com atualização instantânea da interface.
+### Frontend & Interface
+* **Biblioteca Core:** React 18+ (arquitetura baseada em Functional Components e Hooks)
+* **Ferramenta de Build:** Vite (desempenho otimizado de Hot Module Replacement - HMR)
+* **Estilização:** CSS3 Moderno estruturado com Variáveis Nativas (Custom Properties) para consistência visual
 
-Interface Profissional: Tema escuro inspirado no IMDb, com estados de "carregando" e "erro" para o usuário.
+### Banco de Dados
+* **SGBD:** MySQL (Modelo Relacional)
 
-Tecnologias Utilizadas
-Backend
-Node.js
+---
 
-Express.js
+## 🚀 Funcionalidades Principais
 
-MySQL2 (Promise)
+* **Consumo de API Externa e Pesquisa Dinâmica:** Busca assíncrona de títulos diretamente do servidor do TMDB, com resposta em tempo real conforme a interação do usuário.
+* **Gerenciamento de Estado de Favoritos:** Operações completas de adição e remoção de filmes diretamente conectados à interface.
+* **Persistência de Dados (CRUD parcial):** Garantia de que os favoritos persistam entre sessões por meio de queries seguras no MySQL.
+* **Interface Reativa e UX Consistente:** Design fluido com tratamento visual explícito para estados de carregamento (*loading states*) e gerenciamento amigável de erros de rede.
+* **Tema Escuro Premium:** Interface inteiramente inspirada na identidade visual clássica do IMDb, otimizada para o consumo de mídia.
 
-dotenv
+---
 
-CORS
+## 📂 Estrutura do Projeto
 
-Frontend
-React 18+ (Hooks)
+O repositório é organizado de forma modular em duas pastas principais na raiz:
 
-Vite
+├── Backend/          # Servidor Express, configuração do banco de dados e rotas da API
+└── Frontend/         # Aplicação React, componentes visuais e consumo de serviços
 
-CSS Moderno (Variáveis)
+---
 
-Banco de Dados
-MySQL
+## ⚙️ Configuração do Ambiente e Instalação
 
-Como Executar o Projeto
-Siga estas instruções para rodar o projeto localmente na sua máquina.
+### Pré-requisitos
+Antes de iniciar, certifique-se de ter instalado em sua máquina:
+* **Node.js** (versão 18 ou superior)
+* **Servidor MySQL** ativo (via Workbench, XAMPP, Docker ou CLI)
+* Uma **Chave de API do TMDB** (disponível gratuitamente na aba de desenvolvedor do site do TMDB)
 
-Pré-requisitos
-Node.js (v18 ou superior)
+---
 
-Um servidor MySQL (MySQL Workbench, XAMPP, etc.)
+### Passo 1: Modelagem do Banco de Dados
 
-Uma Chave de API do TMDB (consiga a sua no site do TMDB)
-
-1. Configuração do Banco de Dados (MySQL)
-Primeiro, execute os seguintes comandos no seu MySQL para criar o banco e a tabela:
+Conecte-se ao seu servidor MySQL através do seu cliente de preferência e execute o script abaixo para inicializar o banco de dados e a tabela estrutural:
 
 CREATE DATABASE movie_catalog;
-
 USE movie_catalog;
 
-CREATE TABLE favorites ( tmdb_id INT NOT NULL, title VARCHAR(255) NOT NULL, PRIMARY KEY (tmdb_id) );
+CREATE TABLE favorites (
+    tmdb_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    PRIMARY KEY (tmdb_id)
+);
 
-2. Configuração do Backend (API)
-Navegue até a pasta do backend: cd Backend
+---
 
-Instale as dependências: npm install
+### Passo 2: Configuração e Inicialização do Backend
 
-Crie um arquivo chamado .env na pasta Backend e cole o conteúdo abaixo, substituindo com suas credenciais:
+1. Pelo terminal, navegue até o diretório do backend:
+   cd Backend
+   
+2. Instale todas as dependências mapeadas no package.json:
+   npm install
+   
+3. Crie um arquivo .env na raiz do diretório Backend e preencha-o com as suas credenciais locais e chave de API correspondente:
+   DB_HOST=localhost
+   DB_USER=root
+   DB_PASSWORD=sua_senha_do_mysql
+   DB_DATABASE=movie_catalog
+   TMDB_API_KEY=sua_chave_de_api_do_tmdb
+   
+4. Inicie o servidor Node.js:
+   node server.js
+   
+   O serviço backend será inicializado e escutará requisições na porta local: http://localhost:3000
 
-DB_HOST=localhost DB_USER=root DB_PASSWORD=sua_senha_do_mysql DB_DATABASE=movie_catalog TMDB_API_KEY=sua_chave_de_api_do_tmdb
+---
 
-Inicie o servidor do backend: node server.js
+### Passo 3: Configuração e Inicialização do Frontend
 
-O servidor estará rodando em http://localhost:3000.
+1. Abra uma nova janela de terminal (mantenha o terminal do backend rodando em segundo plano) e acesse a pasta do frontend:
+   cd Frontend
+   
+2. Instale as dependências necessárias para a interface:
+   npm install
+   
+3. Execute o servidor de desenvolvimento do Vite:
+   npm run dev
+   
+4. O terminal exibirá o endereço local gerado pelo Vite, normalmente http://localhost:5173. Abra o link indicado no seu navegador para interagir com a aplicação completa.
 
-3. Configuração do Frontend (React)
-Abra um novo terminal (mantenha o terminal do backend rodando!).
+---
 
-Navegue até a pasta do frontend: cd Frontend
+## 📌 Arquitetura da API (Rotas Principais sugeridas)
 
-Instale as dependências: npm install
+A comunicação entre as partes é realizada via JSON por meio dos seguintes endpoints:
+* http://localhost:3000/ — Ponto de entrada e comunicação com banco de dados/TMDB.
 
-Inicie a aplicação React (Vite): npm run dev
-
-O Vite informará o endereço para abrir no navegador, geralmente http://localhost:5173.
-
-4. Pronto!
-Agora é só acessar a aplicação no seu navegador (ex: http://localhost:5173) e usar o catálogo!
+---
+Projeto desenvolvido com foco no estudo prático de integração Full-Stack, persistência de dados relacional e consumo assíncrono de APIs externas.
