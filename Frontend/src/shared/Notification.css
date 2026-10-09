@@ -9,24 +9,24 @@
   align-items: center;
   gap: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  color: var(--imdb-text-light);
+  color: var(--film-text-light);
   animation: fadeIn 0.3s ease-out;
 }
 
 .notification-container.success {
-  background-color: #4caf50;
-  border: 1px solid #388e3c;
+  background-color: #29230e;
+  border: 1px solid var(--film-yellow);
 }
 
 .notification-container.error {
-  background-color: #f44336;
-  border: 1px solid #d32f2f;
+  background-color: #3d222a;
+  border: 1px solid #b96868;
 }
 
 .notification-container .close-btn {
   background: none;
   border: none;
-  color: var(--imdb-text-light);
+  color: var(--film-text-light);
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
@@ -36,7 +36,7 @@
 }
 
 .notification-container .close-btn:hover {
-  color: var(--imdb-yellow);
+  color: var(--film-yellow);
 }
 
 @keyframes fadeIn {
@@ -48,4 +48,9 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .notification-container { animation: none; }
+  .notification-container .close-btn { transition: none; }
 }

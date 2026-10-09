@@ -1,0 +1,1193 @@
+{
+  "genres": [
+    {
+      "id": 12,
+      "name": "Aventura"
+    },
+    {
+      "id": 14,
+      "name": "Fantasia"
+    },
+    {
+      "id": 16,
+      "name": "Animação"
+    },
+    {
+      "id": 18,
+      "name": "Drama"
+    },
+    {
+      "id": 27,
+      "name": "Terror"
+    },
+    {
+      "id": 28,
+      "name": "Ação"
+    },
+    {
+      "id": 35,
+      "name": "Comédia"
+    },
+    {
+      "id": 36,
+      "name": "História"
+    },
+    {
+      "id": 53,
+      "name": "Suspense"
+    },
+    {
+      "id": 80,
+      "name": "Crime"
+    },
+    {
+      "id": 878,
+      "name": "Ficção científica"
+    },
+    {
+      "id": 9648,
+      "name": "Mistério"
+    },
+    {
+      "id": 10402,
+      "name": "Música"
+    },
+    {
+      "id": 10749,
+      "name": "Romance"
+    },
+    {
+      "id": 10751,
+      "name": "Família"
+    }
+  ],
+  "movies": [
+    {
+      "id": 11,
+      "title": "Guerra nas Estrelas",
+      "original_title": "Star Wars",
+      "original_language": "en",
+      "search_aliases": [
+        "Star Wars"
+      ],
+      "release_date": "1977-05-25",
+      "runtime": 121,
+      "genre_ids": [
+        12,
+        28,
+        878
+      ],
+      "featured_rank": 40,
+      "overview": "Um jovem se une a uma aliança rebelde para enfrentar um império galáctico e ajudar a resgatar uma princesa.",
+      "poster_path": "/dw7X9YPjjAfIxKHW04V64Bb9TB0.jpg",
+      "backdrop_path": "/zqkmTXzjkAgXmEWLRsY4UpTWCeo.jpg",
+      "director": "George Lucas",
+      "cast": [
+        "Mark Hamill",
+        "Harrison Ford",
+        "Carrie Fisher",
+        "Peter Cushing"
+      ],
+      "certification_br": "10",
+      "trailer_key": "i-vsILeJ8_8"
+    },
+    {
+      "id": 105,
+      "title": "De Volta para o Futuro",
+      "original_title": "Back to the Future",
+      "original_language": "en",
+      "search_aliases": [
+        "Back to the Future"
+      ],
+      "release_date": "1985-07-03",
+      "runtime": 115,
+      "genre_ids": [
+        12,
+        35,
+        878
+      ],
+      "featured_rank": 39,
+      "overview": "Um adolescente viaja acidentalmente ao passado e precisa garantir que seus pais se encontrem para poder voltar ao presente.",
+      "poster_path": "/i996T0lI1fGtFEowiH3V6eZthL0.jpg",
+      "backdrop_path": "/5bzPWQ2dFUl2aZKkp7ILJVVkRed.jpg",
+      "director": "Robert Zemeckis",
+      "cast": [
+        "Michael J. Fox",
+        "Christopher Lloyd",
+        "Crispin Glover",
+        "Lea Thompson"
+      ],
+      "certification_br": "L",
+      "trailer_key": "ez6WQ7IX72U"
+    },
+    {
+      "id": 120,
+      "title": "O Senhor dos Anéis: A Sociedade do Anel",
+      "original_title": "The Lord of the Rings: The Fellowship of the Ring",
+      "original_language": "en",
+      "search_aliases": [
+        "The Lord of the Rings: The Fellowship of the Ring"
+      ],
+      "release_date": "2001-12-18",
+      "runtime": 179,
+      "genre_ids": [
+        12,
+        14,
+        28
+      ],
+      "featured_rank": 38,
+      "overview": "Um hobbit parte com novos aliados para impedir que um anel poderoso volte às mãos de um senhor sombrio.",
+      "poster_path": "/tlvsNCwWEIgwAM23aNzTmMIcPEZ.jpg",
+      "backdrop_path": "/oiwc338EoBgS4sEI2ixAny4KQKg.jpg",
+      "director": "Peter Jackson",
+      "cast": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Viggo Mortensen",
+        "Sean Astin"
+      ],
+      "certification_br": "12",
+      "trailer_key": "_nZdmwHrcnw"
+    },
+    {
+      "id": 155,
+      "title": "Batman: O Cavaleiro das Trevas",
+      "original_title": "The Dark Knight",
+      "original_language": "en",
+      "search_aliases": [
+        "The Dark Knight"
+      ],
+      "release_date": "2008-07-16",
+      "runtime": 152,
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "featured_rank": 37,
+      "overview": "Batman enfrenta um criminoso que espalha o caos por Gotham e coloca à prova os princípios de seus defensores.",
+      "poster_path": "/4lj1ikfsSmMZNyfdi8R8Tv5tsgb.jpg",
+      "backdrop_path": "/9FE5eD92WfVCiivM9Pq9GVSrlWk.jpg",
+      "director": "Christopher Nolan",
+      "cast": [
+        "Christian Bale",
+        "Heath Ledger",
+        "Aaron Eckhart",
+        "Michael Caine"
+      ],
+      "certification_br": "12",
+      "trailer_key": "9HPaJQAIx6w"
+    },
+    {
+      "id": 8587,
+      "title": "O Rei Leão",
+      "original_title": "The Lion King",
+      "original_language": "en",
+      "search_aliases": [
+        "The Lion King"
+      ],
+      "release_date": "1994-06-15",
+      "runtime": 89,
+      "genre_ids": [
+        16,
+        10751,
+        18
+      ],
+      "featured_rank": 36,
+      "overview": "Após perder o pai, um jovem leão foge de casa e precisa decidir se volta para assumir seu lugar no reino.",
+      "poster_path": "/8aIvm8OaJISOpVTt7rMIh7X35G5.jpg",
+      "backdrop_path": "/bqFxtuGNsz30HTk5mzgGs8m9Po.jpg",
+      "director": "Roger Allers / Rob Minkoff",
+      "cast": [
+        "Matthew Broderick",
+        "Moira Kelly",
+        "Jeremy Irons",
+        "Nathan Lane"
+      ],
+      "certification_br": "L",
+      "trailer_key": "rHiHRhbTv-Q"
+    },
+    {
+      "id": 238,
+      "title": "O Poderoso Chefão",
+      "original_title": "The Godfather",
+      "original_language": "en",
+      "search_aliases": [
+        "The Godfather"
+      ],
+      "release_date": "1972-03-14",
+      "runtime": 175,
+      "genre_ids": [
+        18,
+        80
+      ],
+      "featured_rank": 35,
+      "overview": "Uma família mafiosa passa por uma disputa de sucessão que atrai um de seus filhos para o centro do poder.",
+      "poster_path": "/wOMxE93W6KcZTuCeNUByNTSaLLt.jpg",
+      "backdrop_path": "/ejdD20cdHNFAYAN2DlqPToXKyzx.jpg",
+      "director": "Francis Ford Coppola",
+      "cast": [
+        "Marlon Brando",
+        "Al Pacino",
+        "James Caan",
+        "Robert Duvall"
+      ],
+      "certification_br": "14",
+      "trailer_key": "0v6MO0EB7UY"
+    },
+    {
+      "id": 597,
+      "title": "Titanic",
+      "original_title": "Titanic",
+      "original_language": "en",
+      "release_date": "1997-12-18",
+      "runtime": 194,
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "featured_rank": 34,
+      "overview": "Dois passageiros de origens sociais diferentes se apaixonam durante a viagem inaugural de um transatlântico.",
+      "poster_path": "/As0zX43h3w6kD2NS4uVHu9HKdEh.jpg",
+      "backdrop_path": "/xXCuto8YVp5RFqBJ7yKmVmLOWpF.jpg",
+      "director": "James Cameron",
+      "cast": [
+        "Leonardo DiCaprio",
+        "Kate Winslet",
+        "Billy Zane",
+        "Kathy Bates"
+      ],
+      "certification_br": "12",
+      "trailer_key": "IH6_CA_ocqY"
+    },
+    {
+      "id": 598,
+      "title": "Cidade de Deus",
+      "original_title": "Cidade de Deus",
+      "original_language": "pt",
+      "release_date": "2002-08-30",
+      "runtime": 130,
+      "genre_ids": [
+        18,
+        80
+      ],
+      "featured_rank": 33,
+      "overview": "Dois jovens seguem caminhos distintos enquanto a violência transforma o bairro carioca onde cresceram.",
+      "poster_path": "/gfnXixcGC060QcG6JPxN6AMdVsq.jpg",
+      "backdrop_path": "/uvitbjFU4JqvMwIkMWHp69bmUzG.jpg",
+      "director": "Fernando Meirelles",
+      "cast": [
+        "Alexandre Rodrigues",
+        "Leandro Firmino",
+        "Phellipe Haagensen",
+        "Douglas Silva"
+      ],
+      "certification_br": "16",
+      "trailer_key": "iCsPdcO4euE"
+    },
+    {
+      "id": 329,
+      "title": "Jurassic Park: O Parque dos Dinossauros",
+      "original_title": "Jurassic Park",
+      "original_language": "en",
+      "search_aliases": [
+        "Jurassic Park"
+      ],
+      "release_date": "1993-06-11",
+      "runtime": 127,
+      "genre_ids": [
+        12,
+        878
+      ],
+      "featured_rank": 32,
+      "overview": "Um parque com dinossauros recriados perde o controle, e os visitantes tentam sobreviver na ilha.",
+      "poster_path": "/mgjJ7FH4V3exsmoHwXrmsUhn0h1.jpg",
+      "backdrop_path": "/4SyDTF02R5BepqSdQmOaNCHObzF.jpg",
+      "director": "Steven Spielberg",
+      "cast": [
+        "Sam Neill",
+        "Laura Dern",
+        "Jeff Goldblum",
+        "Richard Attenborough"
+      ],
+      "certification_br": "14",
+      "trailer_key": "YizU376o3tQ"
+    },
+    {
+      "id": 129,
+      "title": "A Viagem de Chihiro",
+      "original_title": "千と千尋の神隠し",
+      "original_language": "ja",
+      "search_aliases": [
+        "Spirited Away"
+      ],
+      "release_date": "2001-07-20",
+      "runtime": 125,
+      "genre_ids": [
+        16,
+        10751,
+        14
+      ],
+      "featured_rank": 31,
+      "overview": "Presa num mundo de espíritos, uma menina trabalha numa casa de banhos enquanto procura uma maneira de salvar os pais.",
+      "poster_path": "/hhoKhsyJ3hFaxEm5pMdZRiTu2lJ.jpg",
+      "backdrop_path": "/dyJvKsNs2KP8qQnAXbRwDjblViy.jpg",
+      "director": "Hayao Miyazaki",
+      "cast": [
+        "Rumi Hiiragi",
+        "Miyu Irino",
+        "Mari Natsuki",
+        "Takashi Naitô"
+      ],
+      "certification_br": "L",
+      "trailer_key": "GAp2_0JJskk"
+    },
+    {
+      "id": 603,
+      "title": "Matrix",
+      "original_title": "The Matrix",
+      "original_language": "en",
+      "search_aliases": [
+        "The Matrix"
+      ],
+      "release_date": "1999-03-31",
+      "runtime": 136,
+      "genre_ids": [
+        28,
+        878
+      ],
+      "featured_rank": 30,
+      "overview": "Um programador descobre que sua realidade é uma simulação e se junta a um grupo disposto a desafiar seus criadores.",
+      "poster_path": "/lDqMDI3xpbB9UQRyeXfei0MXhqb.jpg",
+      "backdrop_path": "/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg",
+      "director": "Lana Wachowski / Lilly Wachowski",
+      "cast": [
+        "Keanu Reeves",
+        "Laurence Fishburne",
+        "Carrie-Anne Moss",
+        "Hugo Weaving"
+      ],
+      "certification_br": "12",
+      "trailer_key": "FVI84Dfx2-I"
+    },
+    {
+      "id": 862,
+      "title": "Toy Story: Um Mundo de Aventuras",
+      "original_title": "Toy Story",
+      "original_language": "en",
+      "search_aliases": [
+        "Toy Story"
+      ],
+      "release_date": "1995-11-22",
+      "runtime": 81,
+      "genre_ids": [
+        10751,
+        35,
+        16,
+        12
+      ],
+      "featured_rank": 29,
+      "overview": "Brinquedos que ganham vida quando ninguém olha precisam lidar com a chegada de um novo favorito ao quarto.",
+      "poster_path": "/686F0CEPmI4ZXjFbWtIHQOBwnfI.jpg",
+      "backdrop_path": "/3Rfvhy1Nl6sSGJwyjb0QiZzZYlB.jpg",
+      "director": "John Lasseter",
+      "cast": [
+        "Tom Hanks",
+        "Tim Allen",
+        "Don Rickles",
+        "Jim Varney"
+      ],
+      "certification_br": "L",
+      "trailer_key": "CxwTLktovTU"
+    },
+    {
+      "id": 284054,
+      "title": "Pantera Negra",
+      "original_title": "Black Panther",
+      "original_language": "en",
+      "search_aliases": [
+        "Black Panther"
+      ],
+      "release_date": "2018-02-13",
+      "runtime": 134,
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "featured_rank": 28,
+      "overview": "Ao voltar para Wakanda, o novo rei enfrenta um rival que desafia o futuro do país.",
+      "poster_path": "/ubXNpxL2ASSzY0f8Hxv08pOsV2L.jpg",
+      "backdrop_path": "/b6ZJZHUdMEFECvGiDpJjlfUWela.jpg",
+      "director": "Ryan Coogler",
+      "cast": [
+        "Chadwick Boseman",
+        "Michael B. Jordan",
+        "Lupita Nyong'o",
+        "Danai Gurira"
+      ],
+      "certification_br": "14",
+      "trailer_key": "WGGBiHhvUrE"
+    },
+    {
+      "id": 13,
+      "title": "Forrest Gump: O Contador de Histórias",
+      "original_title": "Forrest Gump",
+      "original_language": "en",
+      "release_date": "1994-06-23",
+      "runtime": 142,
+      "genre_ids": [
+        35,
+        18,
+        10749
+      ],
+      "featured_rank": 27,
+      "overview": "Ao contar sua trajetória por décadas da história americana, Forrest relembra encontros, perdas e a amizade que mais marcou sua vida.",
+      "poster_path": "/d74WpIsH8379TIL4wUxDneRCYv2.jpg",
+      "backdrop_path": "/66Kn4XWhkuPkJxOJyPEx4U2CUfN.jpg",
+      "director": "Robert Zemeckis",
+      "cast": [
+        "Tom Hanks",
+        "Robin Wright",
+        "Gary Sinise",
+        "Sally Field"
+      ],
+      "certification_br": "14",
+      "trailer_key": "Mj9IA9tTfio"
+    },
+    {
+      "id": 278,
+      "title": "Um Sonho de Liberdade",
+      "original_title": "The Shawshank Redemption",
+      "original_language": "en",
+      "search_aliases": [
+        "The Shawshank Redemption"
+      ],
+      "release_date": "1994-09-23",
+      "runtime": 142,
+      "genre_ids": [
+        18,
+        80
+      ],
+      "featured_rank": 26,
+      "overview": "Condenado por um crime que afirma não ter cometido, um homem constrói amizades e preserva a esperança dentro da prisão.",
+      "poster_path": "/umX3lBhHoTV7Lsci140Yr8VpXyN.jpg",
+      "backdrop_path": "/pNjh59JSxChQktamG3LMp9ZoQzp.jpg",
+      "director": "Frank Darabont",
+      "cast": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton",
+        "William Sadler"
+      ],
+      "certification_br": "16",
+      "trailer_key": "PLl99DlL6b4"
+    },
+    {
+      "id": 150540,
+      "title": "Divertida Mente",
+      "original_title": "Inside Out",
+      "original_language": "en",
+      "search_aliases": [
+        "Inside Out"
+      ],
+      "release_date": "2015-06-17",
+      "runtime": 95,
+      "genre_ids": [
+        16,
+        10751,
+        12,
+        18,
+        35
+      ],
+      "featured_rank": 25,
+      "overview": "As emoções de uma menina tentam guiá-la enquanto ela enfrenta uma mudança de cidade e de vida.",
+      "poster_path": "/62SAZfLfzhxJWUFJvfIPMw6QUpE.jpg",
+      "backdrop_path": "/jJKZaTBNenlFclQyjrnvzkRmvWE.jpg",
+      "director": "Pete Docter",
+      "cast": [
+        "Amy Poehler",
+        "Phyllis Smith",
+        "Richard Kind",
+        "Bill Hader"
+      ],
+      "certification_br": "L",
+      "trailer_key": "LSpeM7G4zfY"
+    },
+    {
+      "id": 666,
+      "title": "Central do Brasil",
+      "original_title": "Central do Brasil",
+      "original_language": "pt",
+      "release_date": "1998-04-03",
+      "runtime": 110,
+      "genre_ids": [
+        18
+      ],
+      "featured_rank": 24,
+      "overview": "Uma mulher que escreve cartas numa estação de trem acompanha um menino em uma viagem para encontrar seu pai.",
+      "poster_path": "/qfyWFhUhqeNRU9HmCaBDAxVKRZ9.jpg",
+      "backdrop_path": "/lrLIy9OFRQg4VkhrCyolfNXJEUH.jpg",
+      "director": "Walter Salles",
+      "cast": [
+        "Fernanda Montenegro",
+        "Vinícius de Oliveira",
+        "Marília Pêra",
+        "Othon Bastos"
+      ],
+      "certification_br": "L",
+      "trailer_key": "qCoqppCsEa8"
+    },
+    {
+      "id": 27205,
+      "title": "A Origem",
+      "original_title": "Inception",
+      "original_language": "en",
+      "search_aliases": [
+        "Inception"
+      ],
+      "release_date": "2010-07-15",
+      "runtime": 148,
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "featured_rank": 23,
+      "overview": "Um especialista em entrar nos sonhos dos outros recebe a missão de implantar uma ideia em vez de roubá-la.",
+      "poster_path": "/9e3Dz7aCANy5aRUQF745IlNloJ1.jpg",
+      "backdrop_path": "/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
+      "director": "Christopher Nolan",
+      "cast": [
+        "Leonardo DiCaprio",
+        "Joseph Gordon-Levitt",
+        "Ken Watanabe",
+        "Tom Hardy"
+      ],
+      "certification_br": "14",
+      "trailer_key": "R_VX0e0PX90"
+    },
+    {
+      "id": 157336,
+      "title": "Interestelar",
+      "original_title": "Interstellar",
+      "original_language": "en",
+      "search_aliases": [
+        "Interstellar"
+      ],
+      "release_date": "2014-11-05",
+      "runtime": 169,
+      "genre_ids": [
+        12,
+        18,
+        878
+      ],
+      "featured_rank": 22,
+      "overview": "Com a Terra em crise, exploradores atravessam o espaço em busca de um lugar onde a humanidade possa continuar.",
+      "poster_path": "/tR1XVa5bxgdh2bRw2u0DzrgkO2l.jpg",
+      "backdrop_path": "/8sNiAPPYU14PUepFNeSNGUTiHW.jpg",
+      "director": "Christopher Nolan",
+      "cast": [
+        "Matthew McConaughey",
+        "Anne Hathaway",
+        "Michael Caine",
+        "Jessica Chastain"
+      ],
+      "certification_br": "10",
+      "trailer_key": "i6avfCqKcQo"
+    },
+    {
+      "id": 545611,
+      "title": "Tudo em Todo o Lugar ao Mesmo Tempo",
+      "original_title": "Everything Everywhere All at Once",
+      "original_language": "en",
+      "search_aliases": [
+        "Everything Everywhere All at Once"
+      ],
+      "release_date": "2022-03-24",
+      "runtime": 139,
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "featured_rank": 21,
+      "overview": "Uma dona de lavanderia descobre versões alternativas da própria vida e precisa atravessá-las para proteger a família.",
+      "poster_path": "/2dSZQGwijlXvMSyuGe0FSgrXnv0.jpg",
+      "backdrop_path": "/fIwiFha3WPu5nHkBeMQ4GzEk0Hv.jpg",
+      "director": "Daniel Scheinert / Daniel Kwan",
+      "cast": [
+        "Michelle Yeoh",
+        "Stephanie Hsu",
+        "Ke Huy Quan",
+        "James Hong"
+      ],
+      "certification_br": "14",
+      "trailer_key": "AayeUDsRB_w"
+    },
+    {
+      "id": 299534,
+      "title": "Vingadores: Ultimato",
+      "original_title": "Avengers: Endgame",
+      "original_language": "en",
+      "search_aliases": [
+        "Avengers: Endgame"
+      ],
+      "release_date": "2019-04-24",
+      "runtime": 181,
+      "genre_ids": [
+        12,
+        878,
+        28
+      ],
+      "featured_rank": 20,
+      "overview": "Depois de uma derrota devastadora, os Vingadores tentam reunir forças e recuperar o que foi perdido.",
+      "poster_path": "/q6725aR8Zs4IwGMXzZT8aC8lh41.jpg",
+      "backdrop_path": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+      "director": "Anthony Russo / Joe Russo",
+      "cast": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Mark Ruffalo",
+        "Chris Hemsworth"
+      ],
+      "certification_br": "12",
+      "trailer_key": "HiAzj9HZQnE"
+    },
+    {
+      "id": 346698,
+      "title": "Barbie",
+      "original_title": "Barbie",
+      "original_language": "en",
+      "release_date": "2023-07-19",
+      "runtime": 114,
+      "genre_ids": [
+        35,
+        12,
+        14
+      ],
+      "featured_rank": 19,
+      "overview": "Ao questionar sua vida aparentemente perfeita, Barbie visita o mundo real e reconsidera o que deseja para si.",
+      "poster_path": "/pP12F7Gutn6CpHYaIPBlDRHlMlk.jpg",
+      "backdrop_path": "/1esAE8sLJRWWFsLLeh5r3g2WanI.jpg",
+      "director": "Greta Gerwig",
+      "cast": [
+        "Margot Robbie",
+        "Ryan Gosling",
+        "America Ferrera",
+        "Ariana Greenblatt"
+      ],
+      "certification_br": "12",
+      "trailer_key": "MQHzdpnOq48"
+    },
+    {
+      "id": 496243,
+      "title": "Parasita",
+      "original_title": "기생충",
+      "original_language": "ko",
+      "search_aliases": [
+        "Parasite"
+      ],
+      "release_date": "2019-05-30",
+      "runtime": 132,
+      "genre_ids": [
+        35,
+        53,
+        18
+      ],
+      "featured_rank": 18,
+      "overview": "Uma família com poucos recursos se aproxima de uma casa rica, e a convivência revela segredos e tensões entre elas.",
+      "poster_path": "/bNGW8zYA91VqTZfV3jnKHPEKKvB.jpg",
+      "backdrop_path": "/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg",
+      "director": "Bong Joon-ho",
+      "cast": [
+        "Song Kang-ho",
+        "Lee Sun-kyun",
+        "Cho Yeo-jeong",
+        "Woo-sik Choi"
+      ],
+      "certification_br": "16",
+      "trailer_key": "ruaBfQWvHKI"
+    },
+    {
+      "id": 872585,
+      "title": "Oppenheimer",
+      "original_title": "Oppenheimer",
+      "original_language": "en",
+      "release_date": "2023-07-19",
+      "runtime": 181,
+      "genre_ids": [
+        18,
+        36
+      ],
+      "featured_rank": 17,
+      "overview": "Um físico lidera um projeto decisivo da Segunda Guerra Mundial e depois enfrenta suas consequências políticas e pessoais.",
+      "poster_path": "/dUPQszWoRSE9FucJTbVp2bwEi9G.jpg",
+      "backdrop_path": "/neeNHeXjMF5fXoCJRsOmkNGC7q.jpg",
+      "director": "Christopher Nolan",
+      "cast": [
+        "Cillian Murphy",
+        "Emily Blunt",
+        "Matt Damon",
+        "Robert Downey Jr."
+      ],
+      "certification_br": "16",
+      "trailer_key": "F3OxA9Cz17A"
+    },
+    {
+      "id": 680,
+      "title": "Pulp Fiction: Tempo de Violência",
+      "original_title": "Pulp Fiction",
+      "original_language": "en",
+      "search_aliases": [
+        "Pulp Fiction"
+      ],
+      "release_date": "1994-09-10",
+      "runtime": 154,
+      "genre_ids": [
+        53,
+        80,
+        35
+      ],
+      "featured_rank": 16,
+      "overview": "Histórias de criminosos em Los Angeles se cruzam entre dívidas, acasos e decisões inesperadas.",
+      "poster_path": "/tptjnB2LDbuUWya9Cx5sQtv5hqb.jpg",
+      "backdrop_path": "/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+      "director": "Quentin Tarantino",
+      "cast": [
+        "John Travolta",
+        "Samuel L. Jackson",
+        "Uma Thurman",
+        "Bruce Willis"
+      ],
+      "certification_br": "18",
+      "trailer_key": "mLB0yWU2i90"
+    },
+    {
+      "id": 324857,
+      "title": "Homem-Aranha: No Aranhaverso",
+      "original_title": "Spider-Man: Into the Spider-Verse",
+      "original_language": "en",
+      "search_aliases": [
+        "Spider-Man: Into the Spider-Verse"
+      ],
+      "release_date": "2018-12-06",
+      "runtime": 117,
+      "genre_ids": [
+        16,
+        28,
+        12,
+        878
+      ],
+      "featured_rank": 15,
+      "overview": "Após adquirir poderes de aranha, Miles Morales conhece heróis de outros universos e aprende a agir por conta própria.",
+      "poster_path": "/ybQSBSrINtjWsJQ6Ih8sva8HlEZ.jpg",
+      "backdrop_path": "/1ntePsIqeklfmrQJqZPncCydsqY.jpg",
+      "director": "Bob Persichetti / Peter Ramsey / Rodney Rothman",
+      "cast": [
+        "Shameik Moore",
+        "Jake Johnson",
+        "Hailee Steinfeld",
+        "Mahershala Ali"
+      ],
+      "certification_br": "10",
+      "trailer_key": "SS6ABPkfmBE"
+    },
+    {
+      "id": 354912,
+      "title": "Viva: A Vida é Uma Festa",
+      "original_title": "Coco",
+      "original_language": "en",
+      "search_aliases": [
+        "Coco"
+      ],
+      "release_date": "2017-10-27",
+      "runtime": 109,
+      "genre_ids": [
+        10751,
+        16,
+        10402,
+        12
+      ],
+      "featured_rank": 14,
+      "overview": "Um menino apaixonado por música chega ao mundo dos mortos e descobre histórias guardadas por sua família.",
+      "poster_path": "/6oNm06TPz2vGiPc2I52oXW3JwPS.jpg",
+      "backdrop_path": "/g7CHF8gTLGooTbP4GznIGwaqAGL.jpg",
+      "director": "Lee Unkrich",
+      "cast": [
+        "Anthony Gonzalez",
+        "Gael García Bernal",
+        "Benjamin Bratt",
+        "Alanna Ubach"
+      ],
+      "certification_br": "L",
+      "trailer_key": "K3cL-o73GPU"
+    },
+    {
+      "id": 419430,
+      "title": "Corra!",
+      "original_title": "Get Out",
+      "original_language": "en",
+      "search_aliases": [
+        "Get Out"
+      ],
+      "release_date": "2017-02-24",
+      "runtime": 104,
+      "genre_ids": [
+        9648,
+        53,
+        27
+      ],
+      "featured_rank": 13,
+      "overview": "Ao visitar a família da namorada, um jovem percebe que sinais inquietantes escondem um plano perigoso.",
+      "poster_path": "/A0RoSZh8PEYJgDMgM2EV7Ycz3dR.jpg",
+      "backdrop_path": "/bBQHALHRAaaORlPNXv7fNcRXYdx.jpg",
+      "director": "Jordan Peele",
+      "cast": [
+        "Daniel Kaluuya",
+        "Allison Williams",
+        "Catherine Keener",
+        "Bradley Whitford"
+      ],
+      "certification_br": "14",
+      "trailer_key": "mDGV5UucTu8"
+    },
+    {
+      "id": 313369,
+      "title": "La La Land: Cantando Estações",
+      "original_title": "La La Land",
+      "original_language": "en",
+      "search_aliases": [
+        "La La Land"
+      ],
+      "release_date": "2016-12-01",
+      "runtime": 128,
+      "genre_ids": [
+        35,
+        18,
+        10749
+      ],
+      "featured_rank": 12,
+      "overview": "Uma aspirante a atriz e um pianista de jazz se aproximam enquanto tentam realizar seus sonhos em Los Angeles.",
+      "poster_path": "/AvMietG6xuobpSSdmVnKuTjv4bL.jpg",
+      "backdrop_path": "/nlPCdZlHtRNcF6C9hzUH4ebmV1w.jpg",
+      "director": "Damien Chazelle",
+      "cast": [
+        "Ryan Gosling",
+        "Emma Stone",
+        "John Legend",
+        "Rosemarie DeWitt"
+      ],
+      "certification_br": "L",
+      "trailer_key": "UD-Cb2yeAPA"
+    },
+    {
+      "id": 693134,
+      "title": "Duna: Parte Dois",
+      "original_title": "Dune: Part Two",
+      "original_language": "en",
+      "search_aliases": [
+        "Dune: Part Two"
+      ],
+      "release_date": "2024-02-27",
+      "runtime": 166,
+      "genre_ids": [
+        878,
+        12
+      ],
+      "featured_rank": 11,
+      "overview": "Paul Atreides se une aos Fremen e enfrenta escolhas que podem mudar o destino de Arrakis.",
+      "poster_path": "/VMy4UGsI2u3f4fALGeCqCdsQBb.jpg",
+      "backdrop_path": "/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+      "director": "Denis Villeneuve",
+      "cast": [
+        "Timothée Chalamet",
+        "Zendaya",
+        "Rebecca Ferguson",
+        "Javier Bardem"
+      ],
+      "certification_br": "14",
+      "trailer_key": "4upWeOF30zI"
+    },
+    {
+      "id": 361743,
+      "title": "Top Gun: Maverick",
+      "original_title": "Top Gun: Maverick",
+      "original_language": "en",
+      "release_date": "2022-05-21",
+      "runtime": 131,
+      "genre_ids": [
+        28,
+        18
+      ],
+      "featured_rank": 10,
+      "overview": "Chamado de volta para treinar novos pilotos, Maverick enfrenta seu passado antes de uma missão arriscada.",
+      "poster_path": "/kPbuLGVSJHATkW9fX9L3h1wM0Pa.jpg",
+      "backdrop_path": "/AaV1YIdWKnjAIAOe8UUKBFm327v.jpg",
+      "director": "Joseph Kosinski",
+      "cast": [
+        "Tom Cruise",
+        "Miles Teller",
+        "Jennifer Connelly",
+        "Bashir Salahuddin"
+      ],
+      "certification_br": "12",
+      "trailer_key": "RE0VVzsw4Mc"
+    },
+    {
+      "id": 244786,
+      "title": "Whiplash: Em Busca da Perfeição",
+      "original_title": "Whiplash",
+      "original_language": "en",
+      "search_aliases": [
+        "Whiplash"
+      ],
+      "release_date": "2014-10-10",
+      "runtime": 107,
+      "genre_ids": [
+        18,
+        10402,
+        53
+      ],
+      "featured_rank": 9,
+      "overview": "Um jovem baterista entra em conflito com seu exigente professor ao perseguir a excelência musical.",
+      "poster_path": "/2msJb27jMeuA101ox4MuTQK4mDa.jpg",
+      "backdrop_path": "/fRGxZuo7jJUWQsVg9PREb98Aclp.jpg",
+      "director": "Damien Chazelle",
+      "cast": [
+        "Miles Teller",
+        "J.K. Simmons",
+        "Paul Reiser",
+        "Melissa Benoist"
+      ],
+      "certification_br": "12",
+      "trailer_key": "iTgk3WbTErk"
+    },
+    {
+      "id": 120467,
+      "title": "O Grande Hotel Budapeste",
+      "original_title": "The Grand Budapest Hotel",
+      "original_language": "en",
+      "search_aliases": [
+        "The Grand Budapest Hotel"
+      ],
+      "release_date": "2014-02-26",
+      "runtime": 100,
+      "genre_ids": [
+        35,
+        18
+      ],
+      "featured_rank": 8,
+      "overview": "Um concierge e seu aprendiz se envolvem numa disputa por herança e numa fuga pela Europa.",
+      "poster_path": "/yabOguSrb8ffUXCkI6t8Rw7xtSh.jpg",
+      "backdrop_path": "/jK65srQczOKTpW62wPxwwKztGgE.jpg",
+      "director": "Wes Anderson",
+      "cast": [
+        "Ralph Fiennes",
+        "F. Murray Abraham",
+        "Tony Revolori",
+        "Adrien Brody"
+      ],
+      "certification_br": "14",
+      "trailer_key": "sF7hAbQR7kk"
+    },
+    {
+      "id": 194,
+      "title": "O Fabuloso Destino de Amélie Poulain",
+      "original_title": "Le Fabuleux Destin d'Amélie Poulain",
+      "original_language": "fr",
+      "search_aliases": [
+        "Le Fabuleux Destin d'Amélie Poulain"
+      ],
+      "release_date": "2001-04-25",
+      "runtime": 122,
+      "genre_ids": [
+        35,
+        10749
+      ],
+      "featured_rank": 7,
+      "overview": "Uma jovem parisiense decide transformar discretamente a vida das pessoas ao seu redor.",
+      "poster_path": "/oAYKYALxamhAB1wKUGmOo05Vf92.jpg",
+      "backdrop_path": "/6n53UI4mX9QMfe2S0Pgt8mGebY1.jpg",
+      "director": "Jean-Pierre Jeunet",
+      "cast": [
+        "Audrey Tautou",
+        "Mathieu Kassovitz",
+        "Rufus",
+        "Serge Merlin"
+      ],
+      "certification_br": "16",
+      "trailer_key": "cYLFIJiFIjc"
+    },
+    {
+      "id": 808,
+      "title": "Shrek",
+      "original_title": "Shrek",
+      "original_language": "en",
+      "release_date": "2001-05-18",
+      "runtime": 90,
+      "genre_ids": [
+        16,
+        35,
+        14,
+        12,
+        10751
+      ],
+      "featured_rank": 6,
+      "overview": "Para recuperar seu pântano, um ogro parte com um burro falante para resgatar uma princesa.",
+      "poster_path": "/wxeqfC221YMptRRdzxlijAh7q8l.jpg",
+      "backdrop_path": "/w0eKUOEog2ImtktCHAMUZws8qif.jpg",
+      "director": "Andrew Adamson / Vicky Jenson",
+      "cast": [
+        "Mike Myers",
+        "Eddie Murphy",
+        "Cameron Diaz",
+        "John Lithgow"
+      ],
+      "certification_br": "L",
+      "trailer_key": "HobeWN9DnsY"
+    },
+    {
+      "id": 578,
+      "title": "Tubarão",
+      "original_title": "Jaws",
+      "original_language": "en",
+      "search_aliases": [
+        "Jaws"
+      ],
+      "release_date": "1975-06-20",
+      "runtime": 124,
+      "genre_ids": [
+        27,
+        53,
+        12
+      ],
+      "featured_rank": 5,
+      "overview": "Quando ataques de tubarão assustam uma cidade litorânea, o chefe de polícia se une a dois homens para caçar o animal.",
+      "poster_path": "/iD2XVowFgHngYGamCAdq2T44gMr.jpg",
+      "backdrop_path": "/i1yf91svRHX45l9BXL8rVFzLoPH.jpg",
+      "director": "Steven Spielberg",
+      "cast": [
+        "Roy Scheider",
+        "Robert Shaw",
+        "Richard Dreyfuss",
+        "Lorraine Gary"
+      ],
+      "certification_br": "14",
+      "trailer_key": "8KxiYWYY3Kw"
+    },
+    {
+      "id": 348,
+      "title": "Alien: O Oitavo Passageiro",
+      "original_title": "Alien",
+      "original_language": "en",
+      "search_aliases": [
+        "Alien"
+      ],
+      "release_date": "1979-05-25",
+      "runtime": 117,
+      "genre_ids": [
+        27,
+        878
+      ],
+      "featured_rank": 4,
+      "overview": "A tripulação de uma nave comercial responde a um sinal desconhecido e passa a lutar contra uma ameaça a bordo.",
+      "poster_path": "/rJEU0u6hvtqBy344z0bpI194LeQ.jpg",
+      "backdrop_path": "/AmR3JG1VQVxU8TfAvljUhfSFUOx.jpg",
+      "director": "Ridley Scott",
+      "cast": [
+        "Tom Skerritt",
+        "Sigourney Weaver",
+        "Veronica Cartwright",
+        "Harry Dean Stanton"
+      ],
+      "certification_br": "14",
+      "trailer_key": "L2VWfWC-wI4"
+    },
+    {
+      "id": 98,
+      "title": "Gladiador",
+      "original_title": "Gladiator",
+      "original_language": "en",
+      "search_aliases": [
+        "Gladiator"
+      ],
+      "release_date": "2000-05-04",
+      "runtime": 155,
+      "genre_ids": [
+        28,
+        18,
+        12
+      ],
+      "featured_rank": 3,
+      "overview": "Traído pelo novo imperador, um general romano se torna gladiador e busca justiça na arena.",
+      "poster_path": "/4DUClyGA6OqjXv6yC0Imf6THGfp.jpg",
+      "backdrop_path": "/Ar7QuJ7sJEiC0oP3I8fKBKIQD9u.jpg",
+      "director": "Ridley Scott",
+      "cast": [
+        "Russell Crowe",
+        "Joaquin Phoenix",
+        "Connie Nielsen",
+        "Oliver Reed"
+      ],
+      "certification_br": "14",
+      "trailer_key": "AVPCzVHLAYY"
+    },
+    {
+      "id": 11036,
+      "title": "Diário de uma Paixão",
+      "original_title": "The Notebook",
+      "original_language": "en",
+      "search_aliases": [
+        "The Notebook"
+      ],
+      "release_date": "2004-06-25",
+      "runtime": 123,
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "featured_rank": 2,
+      "overview": "Um romance entre jovens de origens sociais diferentes desafia a distância e as escolhas impostas por suas famílias.",
+      "poster_path": "/hO6k34ZNDwWzgcnzFbqYf2Rjg5W.jpg",
+      "backdrop_path": "/zdXnJqBaGFVtLoPNuMeKfEYUViZ.jpg",
+      "director": "Nick Cassavetes",
+      "cast": [
+        "Ryan Gosling",
+        "Rachel McAdams",
+        "Gena Rowlands",
+        "James Garner"
+      ],
+      "certification_br": "14",
+      "trailer_key": "FC6biTjEyZw"
+    },
+    {
+      "id": 671,
+      "title": "Harry Potter e a Pedra Filosofal",
+      "original_title": "Harry Potter and the Philosopher's Stone",
+      "original_language": "en",
+      "search_aliases": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "release_date": "2001-11-16",
+      "runtime": 152,
+      "genre_ids": [
+        12,
+        14
+      ],
+      "featured_rank": 1,
+      "overview": "Um garoto descobre ser bruxo, ingressa em Hogwarts e começa a desvendar um mistério ligado ao seu passado.",
+      "poster_path": "/4rtsbE9aQ1qw4gv7yYwaNYfWFoS.jpg",
+      "backdrop_path": "/lvOLivVeX3DVVcwfVkxKf0R22D8.jpg",
+      "director": "Chris Columbus",
+      "cast": [
+        "Daniel Radcliffe",
+        "Rupert Grint",
+        "Emma Watson",
+        "Richard Harris"
+      ],
+      "certification_br": "L",
+      "trailer_key": "l91Km49W9qI"
+    }
+  ]
+}

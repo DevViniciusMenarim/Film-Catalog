@@ -1,0 +1,97 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8.4
+        env:
+          MYSQL_ROOT_PASSWORD: film_catalog_test
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -uroot -pfilm_catalog_test"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: npm
+          cache-dependency-path: |
+            Backend/package-lock.json
+            Frontend/package-lock.json
+      - name: Install backend dependencies
+        working-directory: Backend
+        run: npm ci
+      - name: Test backend
+        working-directory: Backend
+        run: npm test
+      - name: Test MySQL migrations and legacy upgrade
+        working-directory: Backend
+        env:
+          DB_TEST_HOST: 127.0.0.1
+          DB_TEST_PORT: 3306
+          DB_TEST_USER: root
+          DB_TEST_PASSWORD: film_catalog_test
+        run: npm run test:integration
+      - name: Install frontend dependencies
+        working-directory: Frontend
+        run: npm ci
+      - name: Test frontend
+        working-directory: Frontend
+        run: npm test
+      - name: Lint frontend
+        working-directory: Frontend
+        run: npm run lint
+      - name: Build frontend
+        working-directory: Frontend
+        run: npm run build
+
+  container-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      CATALOG_SOURCE: demo
+      MYSQL_ROOT_PASSWORD: ci-only-root-password
+      MYSQL_PASSWORD: ci-only-app-password
+      WEB_PORT: '5174'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate and build Compose images
+        run: |
+          docker compose config --quiet
+          docker compose build --pull
+      - name: Start stack and check browser routes
+        run: |
+          docker compose up --no-build -d
+          for attempt in $(seq 1 60); do
+            frontend_id="$(docker compose ps -q frontend)"
+            if [ -n "$frontend_id" ] && \
+               [ "$(docker inspect --format '{{.State.Health.Status}}' "$frontend_id")" = healthy ] && \
+               curl -fsS -o /dev/null http://127.0.0.1:5174/ && \
+               curl -fsS -o /dev/null 'http://127.0.0.1:5174/api/discover?page=1'; then
+              curl -fsS http://127.0.0.1:5174/api/catalog-info | grep -Fq '"source":"demo"'
+              exit 0
+            fi
+            sleep 3
+          done
+          exit 1
+      - name: Diagnose Compose failure
+        if: failure()
+        run: |
+          docker compose ps
+          docker compose logs --no-color --tail=100 db migrate backend frontend
+      - name: Stop test stack
+        if: always()
+        run: docker compose down --volumes --remove-orphans
